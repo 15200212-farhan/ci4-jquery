@@ -20,7 +20,7 @@
 
   <!-- Nav Item - Pages Collapse Menu -->
   <li class="nav-item">
-    <a class="nav-link" href="<?= site_url('admin/dashboard'); ?>">
+    <a class="nav-link" href="<?= site_url('admin/list-data'); ?>">
       <i class="fas fa-solid fa-folder"></i>
       <span>List data</span></a>
   </li>
@@ -31,8 +31,6 @@
       <i class="fas fa-cog"></i>
       <span>Setting</span></a>
   </li>
-
-
 
 
   <!-- Divider -->

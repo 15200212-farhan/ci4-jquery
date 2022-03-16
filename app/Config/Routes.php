@@ -36,6 +36,9 @@ $routes->get('/', 'Home::index');
 
 $routes->group('admin', function ($routes) {
     $routes->get('dashboard', 'admin/AdminController::index');
+    $routes->get('list-data', 'admin/AdminController::list_data');
+    $routes->post('form-tambahdata', 'admin/AdminController::form_tambahdata');
+    $routes->post('insert-datamahasiswa', 'admin/AdminController::insert_datamahasiswa');
 });
 
 /*
