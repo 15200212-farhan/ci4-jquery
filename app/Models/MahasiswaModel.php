@@ -27,4 +27,10 @@ class MahasiswaModel extends Model
         $query = $this->db->table('tbl_mahasiswa')->insert($data);
         return $query;
     }
+
+    public function delete_data($data)
+    {
+        $query = $this->db->table('tbl_mahasiswa')->delete($data);
+        return $query;
+    }
 }
