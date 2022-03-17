@@ -37,8 +37,12 @@ $routes->get('/', 'Home::index');
 $routes->group('admin', function ($routes) {
     $routes->get('dashboard', 'admin/AdminController::index');
     $routes->get('list-data', 'admin/AdminController::list_data');
-    $routes->post('form-tambahdata', 'admin/AdminController::form_tambahdata');
-    $routes->post('insert-datamahasiswa', 'admin/AdminController::insert_datamahasiswa');
+    $routes->get('modal-tambah', 'admin/AdminController::modal_tambah');
+    $routes->post('insert-data', 'admin/AdminController::simpan_data');
+
+    $routes->get('modal-edit', 'admin/AdminController::modal_edit');
+    $routes->post('update-data', 'admin/AdminController::ubah_data');
+    $routes->post('hapus-data', 'admin/AdminController::hapus_data');
 });
 
 /*
